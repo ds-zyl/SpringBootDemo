@@ -1,0 +1,19 @@
+第一次上传，很多命令步骤不熟悉。记录。
+
+前提：
+安装git
+新建git仓库
+
+步骤：
+1、新建文件夹，执行命令  git init   此时文件夹内会生成.git隐藏文件夹
+2、把你的项目粘贴到这个本地Git仓库里面。就是新建的文件夹 ，可通过 git status来查看你当前的状态
+3、git add +项目名  或  “git add.”把该目录下所有文件添加到仓库。
+4、git commit -m "注释" 提交到仓库。不写注释可能会报错，建议写注释。
+本地Git仓库和Github仓库之间的传输是通过SSH加密的，需要生成密钥并配置到git中。不详细描述。
+5、关联本地仓库到远程仓库 git remote add origin https://github.com/guyibang/TEST2.git
+6、初次上传   git push -u origin master 
+   以后再上传 git push origin master
+
+补充：
+若创建仓库时生成了README文件，需要先同步到私服仓库，在执行步骤6，否则报错。同步命令：
+git pull --rebase origin master
