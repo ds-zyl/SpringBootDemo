@@ -17,3 +17,9 @@
 补充：
 若创建仓库时生成了README文件，需要先同步到私服仓库，在执行步骤6，否则报错。同步命令：
 git pull --rebase origin master
+
+
+新增工程（springcloud-lesson-swagger）样例：
+git add springcloud-lesson-swagger
+git commit -m "add project import swagger"
+git push origin master
